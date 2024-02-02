@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Send messages</title>
+        <script>
+            var wsPort = <%= wsPort %>;
+        </script>
+        <script type="text/javascript" src="sender.js" async></script>
+    </head>
+    <body>
+        <select name="lines" id="lines">
+
+        </select>
+        <input id="message" type="text" maxlength="3" value="MSG">
+        <button type="button" onclick="sendMessage()">send</button>
+    </body>
+</html>
